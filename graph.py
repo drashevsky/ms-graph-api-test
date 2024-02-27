@@ -148,7 +148,7 @@ class Graph:
         result = await self.user_client.me.events.by_event_id(event_id).patch(request_body)
         result_start = datetime.fromisoformat(result.start.date_time.split(".")[0])
         result_end = datetime.fromisoformat(result.end.date_time.split(".")[0])
-        return  result_start == new_start and result_end == new_end
+        return  result_start == new_start and result_end == new_end 	# might be sketchy
 
     async def previewSchedule(self, toggle_week_view: bool):
         today = datetime.now()
