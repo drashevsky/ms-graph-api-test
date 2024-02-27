@@ -26,4 +26,5 @@ This junk relies on [Python 3.10.11](https://www.python.org/downloads/release/py
 - `updateEvent`: given an event ID, move an event on your calendar to a new time
 - `previewSchedule`: show all events on your calendar for either today or the whole week
 - `suggestAlternativeTimes`: given a time window, show potential free times for events, courtesy of Microsoft
+
 Note: some functions in this project assume Pacific Standard Time. If this ever goes into production, that will change.
