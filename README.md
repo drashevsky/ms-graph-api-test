@@ -19,3 +19,11 @@ This junk relies on [Python 3.10.11](https://www.python.org/downloads/release/py
 - `graph.py` provides all the library functionality that works with the Microsoft Graph API
 - `config.cfg` is credentials and configuration for the API connection
 - `requirements.txt` contains all python packages this project needs to run (there are a lot)
+
+## graph.py functions:
+- `isAvailable`: is the time window you selected completely free?
+- `createEvent`: put an event on your calendar
+- `updateEvent`: given an event ID, move an event on your calendar to a new time
+- `previewSchedule`: show all events on your calendar for either today or the whole week
+- `suggestAlternativeTimes`: given a time window, show potential free times for events, courtesy of Microsoft
+Note: some functions in this project assume Pacific Standard Time. If this ever goes into production, that will change.
